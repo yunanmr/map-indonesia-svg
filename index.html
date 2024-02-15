@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    if (screen.width >= 768 && screen.width <= 1136) {
+      var ratio = Math.round(screen.width / 13) / 100;
+      document.getElementById("viewport").setAttribute("content", "width=1300, initial-scale=" + ratio);
+    }
+  </script>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <title>Peta Real Count Pemilu 2024 - U9Media</title>
+  <link rel="stylesheet" href="main.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="demo.css" type="text/css" media="all" />
+</head>
+
+<body class="page-template-default page page-id-7030">
+  <div id="page" class="site ">
+    <div id="content" class="site-content">
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+          <article id="post-7030" class="post-7030 page type-page status-publish hentry">
+            <div class="entry-content content-col">
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <h3>PETA SEBARAN PEMILU PRESIDEN & WAKIL PRESIDEN RI 2024</h3>
+                </div>
+              </div>
+              <div class="demo-theme-dark row">
+                <div class="col-md-12 demo-block rounded padding demo-background margin-bottom-big">
+                  <div id="chartdiv" style="height: 500px;"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </main>
+      </div>
+    </div>
+    <footer class="site-footer" role="banner">
+      <div class="content-col">
+    
+        <div class="row">
+          <div class="col-md-8 col-md-push-4 col-sm-12 subfooter">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12 pull-right" id="copyright" role="contentinfo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      id="jquery-js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/3/ammap.js?ver=20231102-e98"
+      id="-lib-3-ammap-js-js"></script>
+    <script type="text/javascript" src="https://cdn.amcharts.com/lib/3/themes/dark.js?ver=20231102-e98"
+      id="-lib-3-themes-dark-js-js"></script>
+    <script>
+      AmCharts.makeChart("chartdiv", {
+        "type": "map",
+        "theme": "dark",
+        "dataProvider": {
+          "mapURL": "indonesia-38-provinsi-amchart-id.svg",
+          "getAreasFromMap": true
+        },
+        "areasSettings": {
+          "autoZoom": true,
+          "selectedColor": "#CC0000"
+        }
+      });
+    </script>
+</body>
+
+</html>
